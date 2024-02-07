@@ -1,6 +1,19 @@
+body {
+  background-color: red;
+}
+
+header {
+  border-top: 2px solid #3498db;
+  background-color: #0b3c7a;
+  color: white;
+  text-align: center;
+  padding: 1.05rem;
+}
+
 h1 {
   padding: 00px 0;
   text-align: center;
+  background-color: ;
 }
 
 nav {

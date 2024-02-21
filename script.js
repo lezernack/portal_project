@@ -11,14 +11,26 @@ year.textContent = currentYear;
 let cardsList = document.querySelector(".cards");
 let cards = [];
 
-const project = {
-  name: "Project1",
-  href: "./project_1/project1.html",
+const card = {
+  title: "Project2",
+  href: " https://lezernack.github.io/memoryGame/",
 };
 
-cards.push(project);
+cards.push(card);
 
 cards.map((item) => {
-  cardsList.innerHTML += ``;
+  cardsList.innerHTML += `<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 id="title">${card.title}</h2>
+    </div>
+    <div class="card-back">
+      <a href= ${card.href} target="blank">Project Link</a>
+    </div>
+  </div>
+</div>`;
   cards.innerHTML += ``;
 });
+
+let title = document.getElementById("title");
+title = `${cards[project.name]}`;
